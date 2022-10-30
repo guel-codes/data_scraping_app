@@ -29,10 +29,8 @@ def main():
 
     while(True):
         idx = random.randrange(0, n_movies)
-        
-        print(f'{titles[idx]} {years[idx]}, Rating: {ratings[idx]:.1f}, Starring: {actors_list[idx]}')
 
-        # comment the next line out to test user input with docker run -t -i
+        print(f'{titles[idx]} {years[idx]}, Rating: {ratings[idx]:.1f}, Starring: {actors_list[idx]}')
     
         user_input = input('Do you want another movie (y/[n])? ')
         if user_input != 'y':
